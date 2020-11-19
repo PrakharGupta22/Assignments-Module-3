@@ -20,16 +20,10 @@ export class AppComponent {
   primeAccount2: PrimeAccount = new PrimeAccount(60000, 250);
   customer4: Customer = new Customer(4, 'aditya', this.primeAccount2);
 
-  customerDetails: any = [];
-
-  pushCustomerDetails() {
-    this.customerDetails.push(this.customer1);
-    this.customerDetails.push(this.customer2);
-    this.customerDetails.push(this.customer3);
-    this.customerDetails.push(this.customer4);
-  }
-  getCustomerDetails(): string {
-    this.pushCustomerDetails();
-    return this.customerDetails;
-  }
+  customerDetails: any = [
+    this.customer1,
+    this.customer2,
+    this.customer3,
+    this.customer4,
+  ];
 }

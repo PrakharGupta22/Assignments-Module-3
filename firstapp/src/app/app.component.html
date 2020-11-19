@@ -1,4 +1,6 @@
 <h1>Assignment 1</h1>
 <h3>Customer Details are</h3>
 <br />
-{{ getCustomerDetails() }}
+<div *ngFor="let customerData of customerDetails">
+  {{ customerData }}
+</div>
